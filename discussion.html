@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Main Characters GoT fan page</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Game of Thrones, Thrones, Lanister, Stark, John Snow, Dragons, ">
+    <meta name="author" content="Oprian Adrian-George, grupa 212">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content="Tema pentru laboratorul de Tehnici Web">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style_discussion.css">
+    <script src = "comments_script.js"></script>
+    
+</head>
+
+<body>
+    <header> <!--meniu si titlu-->
+        
+        <div id = "logo">
+            <a href="./index.html#menu"><img src="https://fontmeme.com/permalink/201105/cbb182be2a8bbc735f7cb5f3e734afe9.png" alt="game-of-thrones-font de 20"></a>
+        </div>
+        
+        
+    </header>
+
+    <div id="menu">
+        <div id = "menu_icon">
+            <div class="menu_icon_bar"></div>
+            <div class="menu_icon_bar"></div>
+            <div class="menu_icon_bar"></div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="main_characters.html">Main characters</a>
+            <a href="gallery.html">Gallery</a>
+            <div class = "dropdown">
+                    <span>Seasons</span>
+                <ul class = "dropdown_list">
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=1&ref_=tt_eps_sn_1" target="_blank">Season 1</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=2" target="_blank">Season 2</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=3" target="_blank">Season 3</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=4" target="_blank">Season 4</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=5" target="_blank">Season 5</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=6" target="_blank">Season 6</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=7" target="_blank">Season 7</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=8" target="_blank">Season 8</a></li>
+                </ul>
+            </div>
+            <a href="discussion.html">Discussion</a>
+            <div id = "log_in">
+                <a href="logIn.html">Log In</a>
+                <a href="signUp.html">Sign Up</a>
+            </div>
+            
+        </nav>
+            
+    </div>
+    <main class="main">
+      
+        <h2>Leave us your thoughts here:</h2>
+        <form id = "comment_input_form">
+            <label for="comment_input">Comment:</label>
+            <br>
+            <textarea name="comment_input" id="comment_input" rows="4" cols="100" placeholder="Write your opinion about my website here."></textarea>
+                <br><br>
+            <div id="radio_post">
+                <p>Do you want to post the comment or just to send it to the creator?</p>
+                <input name = "postComment" type="radio" id = "post" value = "Post" checked>
+                <label for="post">Post</label>
+                <br>
+                <input name = "postComment" type="radio" id = "to_creator" value = "to_creator">
+                <label for = "to_creator">Just send it to the creator</label>
+            </div>
+            <input type = "button" value = "Post" onclick="postCommentInPage()">
+        </form>
+        <!-- pe enter sa posteze cu add event listener-->
+       
+        <div id="comments_section">
+            <button onclick = "deleteComments()">Delete entire section</button>
+            <div class="comment">
+                <p>This is a comment</p>
+                <p class = "comment-date">Posted on: <span>14.12.2020 - 18:30</span> </p>
+            </div>
+        </div>
+        <div id = "hidden_comments">
+            <!-- <br> -->
+            <p id = "display_comments">Click here to show your comments that were not posted</p>
+        </div>
+
+        <a href="index.html" id = "broken_a"><h4>Click here to go to the main page</h4></a>
+
+        <div id = "random_color_display_generator">
+            <div id = "random_color_display_btn" onclick="changeColorDisplay()">
+                <span>Show me random colors</span>
+            </div>
+            <div id = "random_color_display" onmouseover="alertColor()"></div>
+        </div>
+    </main>
+
+    <footer class = "main">
+        <h3>Valar Morghulis</h3>
+        <q>Jaqen H'ghar</q>
+        <aside>
+            <span >Season 2; Episode 10</span>
+        </aside>
+        
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+/* Actors start */
+.jon_danny{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    text-align: justify;
+}
+.jon_danny figure{
+    display: flex;
+    width: 500px;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    align-items: center;
+}
+
+.jon_danny figure img:hover {
+    animation-name: rotate_character;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+@media (max-width: 1200px){
+    .jon_danny figure {
+        width: 450px;
+        font-size: 0.8em;
+    }
+    .jon_danny {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1000px){
+    .jon_danny figure {
+        width: 400px;
+    }
+}
+
+
+.jon_snow figure{
+    float: left;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    
+}
+.jon_danny img{
+    width: 100%;
+    height: auto;
+}
+
+.jon_danny p {
+    margin-top: 0;
+}
+
+.daenerys figure{
+    float: right;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px){
+    .character-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .character-content figure {
+        height: 60%;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+    }
+    
+    .jon_danny figure{
+        margin-bottom: 5px;
+    }
+
+    .jon_danny img {
+        height: 90%;
+        align-self: center;
+        flex-grow: 0;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 767px){
+    .jon_danny img {
+        height: 90%;
+        width: 70%;
+        align-self: center;
+        flex-grow: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .jon_danny figure {
+        width: 60%;
+        height: 80%;
+        padding: 20px
+    }
+}
+
+@keyframes rotate_character {
+    0% {transform: rotate3d(1, 0, 0, 0deg);}
+    25% {transform: rotate3d(1, 0, 0, 90deg);}
+    50% {transform: rotate3d(1, 0, 0, 180deg);}
+    75% {transform: rotate3d(1, 0, 0, 270deg);}
+    100% {transform: rotate3d(1, 0, 0, 360deg);}  
+}
+
+
+#hidden_image {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#hidden_image figure{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: auto;
+    visibility: hidden;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+#hidden_image figure img {
+    width: 100%;
+    height: auto;
+}
+
+
+#hidden_image button{
+    margin-right: 20px;
+}
+

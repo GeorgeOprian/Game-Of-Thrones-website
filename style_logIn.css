@@ -1,0 +1,33 @@
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    justify-content: flex-start;
+}
+
+form {
+    background-color:rgb(233, 229, 224);
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+input{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+#responseFromServer {
+    margin: 30px;
+    background-color: rgb(233, 229, 224);
+    border-radius: 10px;
+}
+
+
+@media (max-width: 530px) {
+    main {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,310 @@
+body{
+    background-color: #171717;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    position: relative;
+    
+}
+
+header{
+    margin-bottom: 2%;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+    flex-direction: column;
+}
+#logo{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    z-index: 1;
+    background-color: #171717;
+    justify-content: center;
+}
+
+.menu_icon_bar {
+    width: 25px;
+    height: 3px;
+    background-color: #BFBFBF;
+    margin-top: 6px;   
+}
+#menu_icon{
+    display: inline-block;
+    align-self: flex-start;
+}
+
+
+#menu {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+nav {
+    background-color: #BFBFBF;
+    display: none;
+    border-radius: 7px;
+}
+
+nav a, .dropdown span {
+    float: left;
+    align-self: baseline;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #171717;
+}
+
+.dropdown .dropdown_list {
+    display: none;
+    padding-left: 5px;
+    position: absolute;
+    top: 130px;
+    z-index: 1;
+    background-color:  #BFBFBF; 
+    border-radius: 7px;
+}
+
+.dropdown span {
+    display: inline-block;
+}
+
+.dropdown_list {
+    display: none;
+    list-style: none;
+}
+#menu:hover nav {
+    display: flex;
+}
+nav a:hover, .dropdown span:hover {
+    background-color: #2b75ca;
+}
+nav a:visited {
+    text-decoration: none;
+    color: #171717;
+}
+
+.dropdown:hover .dropdown_list{
+    display: block;
+}
+nav a{
+    align-self: center;
+}
+[target *= "blank"]{
+    font-weight: bold;
+}
+
+@media (max-width: 600px){
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropdown .dropdown_list {
+        top: 260px;
+    }
+    
+}
+
+
+.main{
+    background-color:  #BFBFBF;
+    border-radius: 7px;
+    margin: 2%;
+    padding: 3%;
+    overflow: auto;
+}
+
+@media (max-width: 768px){
+    body{
+        font-size: 1em;
+    }
+}
+
+/* Home start */
+
+#intro {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#intro section {
+    width: 100%;
+    height: 50%;
+    display: inline-block; 
+    
+}
+#HBO_link{
+    width: 40%;
+    height: 60%;
+    float: right; 
+    margin-top: 5%;
+    margin-bottom: 10px;
+    padding-left: 5%;
+}
+
+#HBO_link img {
+    width: 90%;
+    height: 70%;
+    display: block;
+    object-fit: cover;
+}
+
+#the_game_begins {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: auto;
+    width: 60%;
+}
+
+@media (max-width: 768px){
+    #the_game_begins{
+        width: 90%;
+    }
+}
+
+.video-container{
+    position: relative;
+    height: 0;
+    width: 90%;
+    overflow: hidden;
+    padding: 0;
+    z-index: 0;
+}
+
+.video-container-16x9{
+    padding-bottom: 56.25%;
+}
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   border:none;
+}
+
+#george{
+    margin-bottom: 5%;
+    padding: 2%;
+    width: auto;
+    overflow: auto;
+}
+
+#george_pic{
+    float: left;
+    width: 30%;
+    height: 30%;
+    padding: 1% 1% 1% 0%;
+    
+}
+
+.important_in_p {
+    font-weight: bold; 
+    font-style: italic;
+    font-size: 1.3em;
+    transition-duration: 2s;
+    transition-property: font-size;
+
+}
+
+.important_in_p:hover{
+    font-size: 20px;
+}
+
+.highlighted_volume {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+
+#a_song_of_ice_and_fire_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5%;
+    flex-direction: row;
+}
+#a_song_of_ice_and_fire_list h4 {
+    margin: 0%;
+    padding: 0%;
+}
+#a_song_of_ice_and_fire_list ol {
+    margin-left: 5%;
+    padding: 0%;
+    display: inline-block;
+}
+#list_content {
+    margin-top: auto; 
+    margin-bottom: auto;
+    padding: 3vh 3vw 3vh 0vw;
+    display: inline-block;
+}
+
+#list_content span{
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium';
+}
+#a_song_book_pic{
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 600px){
+    #a_song_of_ice_and_fire_list{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+#stats h3 span{
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1.5em;
+    color: #ffff1a;
+}
+#stats table, th, td {
+    border: 0.5px solid;
+}
+table thead :nth-child(1){
+    background: #2b75ca;
+}
+
+tr:nth-of-type(even){
+    background: #65a1e6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+td, th{
+    text-align: center; 
+    vertical-align: middle;
+}
+
+footer {
+    padding: 2vh;
+}
+footer h3{
+    font-family: Georgia, serif;
+    display: inline;
+}
+footer span {
+    font-style: italic
+}
+aside {
+    display: inline;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #171717;
+}

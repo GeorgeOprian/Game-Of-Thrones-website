@@ -1,0 +1,158 @@
+#comments_section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 95%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid black; */
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 0;
+    background-color:#b3cccc;
+    border-radius: 10px;
+}
+#comment_input{
+    width: 80vw;
+    height: 60px;
+}
+
+#radio_post{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#radio_post p{
+    margin-top: 7px;
+}
+.comment {
+    border: 1px solid black;
+    padding: 1%;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.comment p {
+    margin: 7px;
+}
+
+.comment-date {
+    font-size: 0.7em;
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* .comment p {
+    border: 1px solid green;
+} */
+button {
+    width: 150px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#hidden_comments {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 95%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid black; */
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 0;
+    background-color: rgb(255, 255, 255);
+    /* #b3cccc; */
+    border-radius: 10px;
+}
+
+#color_picker {
+    display: flex;
+    flex-direction: row;
+}
+
+#input {
+    align-self: center;
+    display: inline-block;
+}
+
+#output {
+    align-self: center;
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.rgb {
+    height: 15px;
+    width: 255px;
+    margin-bottom: 10px;
+}
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+@media (max-width: 470px){
+    #color_picker {
+        flex-direction: column;
+    }
+}
+
+
+#hidden_section_color{
+    display: inline-block;
+}
+
+#random_color_display_generator{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+}
+
+#random_color_display {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+#random_color_display_btn {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+#random_color_display_btn:hover {
+    cursor: default;
+}

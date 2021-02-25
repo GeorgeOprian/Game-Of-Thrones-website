@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Log in</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Game of Thrones, Thrones, Lanister, Stark, John Snow, Dragons, ">
+    <meta name="author" content="Oprian Adrian-George, grupa 212">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content="Tema pentru laboratorul de Tehnici Web">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_logIn.css">
+
+    <script src = "script.js"></script>
+</head>
+
+<body>
+    <header> <!--meniu si titlu-->
+        
+        <div id = "logo">
+            <a href="./index.html#menu"><img src="https://fontmeme.com/permalink/201105/cbb182be2a8bbc735f7cb5f3e734afe9.png" alt="game-of-thrones-font de 20"></a>
+        </div>
+        
+        
+    </header>
+
+    <div id="menu">
+        <div id = "menu_icon">
+            <div class="menu_icon_bar"></div>
+            <div class="menu_icon_bar"></div>
+            <div class="menu_icon_bar"></div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="main_characters.html">Main characters</a>
+            <a href="gallery.html">Gallery</a>
+            <div class = "dropdown">
+                <!-- <div class="dropdown_button"> -->
+                    <span>Seasons</span>
+                <!-- </div> -->
+                <ul class = "dropdown_list">
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=1&ref_=tt_eps_sn_1" target="_blank">Season 1</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=2" target="_blank">Season 2</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=3" target="_blank">Season 3</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=4" target="_blank">Season 4</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=5" target="_blank">Season 5</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=6" target="_blank">Season 6</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=7" target="_blank">Season 7</a></li>
+                    <li><a href="https://www.imdb.com/title/tt0944947/episodes?season=8" target="_blank">Season 8</a></li>
+                </ul>
+            </div>
+            <a href="discussion.html">Discussion</a>
+            <div id = "log_in">
+                <a href="logIn.html">Log In</a>
+                <a href="signUp.html">Sign Up</a>
+            </div>
+            
+        </nav>
+            
+    </div>
+    
+    <main class="main">
+        <div class="log_in">
+            <form action="http://localhost:8080/log_in" method="GET" target = "responseFromServer">
+                <h3>Log in</h3>
+                <label for="username">User Name</label>
+                <input type="text" name="username" id="">
+                
+                <label for="password">Passowrd</label>
+                <input type="password" name="password" id="">
+
+                <button>Log in</button>
+            </form>
+        </div>
+        <iframe id = "responseFromServer" src = "" name = "responseFromServer" frameborder="0" width="200px" height="200px">
+            
+        </iframe>
+    </main>
+
+    <footer class = "main">
+        <h3>Valar Morghulis</h3>
+        <q>Jaqen H'ghar</q>
+        <aside>
+            <span >Season 2; Episode 10</span>
+        </aside>
+        
+    </footer>
+</body>
+
